@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HalKedua">
+
+
+    <EditText
+        android:id="@+id/inputTinggi"
+        android:layout_width="396dp"
+        android:layout_height="80dp"
+        android:hint="Tinggi"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <EditText
+        android:id="@+id/inputAlas"
+        android:layout_width="396dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="44dp"
+        android:hint="Alas"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/tombolhitung"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputTinggi"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/tombolhitung"
+        android:layout_width="match_parent"
+        android:layout_height="40pt"
+        android:layout_marginTop="164dp"
+        android:backgroundTint="#009688"
+        android:text="Hitung luas"
+        app:layout_constraintBottom_toTopOf="@+id/tampilhasil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputTinggi"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tampilhasil"
+        android:layout_width="396dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="284dp"
+        android:text="di sini tampil hasil"
+        android:textSize="15pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputTinggi"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <Button
+        android:id="@+id/pindah1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#009688"
+        android:text="Pindah"
+        android:onClick="Pindahs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tampilhasil"
+        app:layout_constraintVertical_bias="0.195" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
